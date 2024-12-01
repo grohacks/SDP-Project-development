@@ -16,13 +16,17 @@ const port = process.env.PORT || 8000;
 
 const corsOptions = {
     origin: ["https://nsht20website.vercel.app"],
-    methods: ["POST", "GET"],
+    methods: ["GET", "POST", "PUT", "DELETE"], // Include all HTTP methods you need
+    allowedHeaders: ["Content-Type", "Authorization"], // Add all required headers
     credentials: true,
 };
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors(corsOptions));
+
+// Explicitly handle preflight OPTIONS requests for all routes
+app.options('*', cors(corsOptions));
 
 // Test route
 app.get('/', (req, res) => {
