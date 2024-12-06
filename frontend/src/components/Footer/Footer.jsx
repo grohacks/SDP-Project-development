@@ -7,23 +7,23 @@ import { AiFillYoutube, AiFillGithub,AiOutlineInstagram } from 'react-icons/ai'
 const socialLinks = [
   {
   path:
-  "https://www.youtube.com/c/CodingWithMuhib",
+  "https://www.youtube.com/@horsenofficial3135",
   icon:
   <AiFillYoutube className="group-hover:text-white w-4 h-5" />,
   },
   {
   path:
-  "https://github.com/codingwithmuhib",
+  "https://github.com/grohacks?tab=repositories",
   icon:
   <AiFillGithub className="group-hover:text-white w-4 h-5" />,
   },
   {
-  path: "https://www.instagram.com/muhib160.official/",
+  path: "https://www.instagram.com/",
   icon: <AiOutlineInstagram className="group-hover:text-white w-4 h-5" />,
   },
   {
   path
-  : "https://www.linkedin.com/in/codingwithmuhib/",
+  : "https://www.linkedin.com/in/nishant-gurram-71919829a/",
   icon: <RiLinkedinFill className="group-hover:text-white w-4 h-5" />,
   },
   ];
